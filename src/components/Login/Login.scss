@@ -1,0 +1,124 @@
+$main-color:#000706;
+
+.main-login{
+min-height: 100vh; // proprietati
+min-width: 100vw;
+overflow-x: hidden;
+background: linear-gradient(to right,  rgb(223, 221, 221) 50%, $main-color 50%);
+.login-contain {
+    height: 75vh;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4),rgba(236,236,236,0.1));
+    border-radius: 1rem;
+    margin: 5rem auto;
+    box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link--register{text-decoration: none;
+        color: red;
+        &:hover {
+            color:brown;
+        }
+    }
+    .footer {
+        margin-top: 1rem;
+    }
+    }
+    
+    .left-side,.right-side{
+        margin: 2rem 2rem;
+        box-shadow: 0.1rem 1.5rem 2.5rem -0.5rem rgb(77, 6, 6);
+        height: 90%;
+        width:100%;
+    }
+
+
+    .img-class {
+        height: 8rem;
+        #img-id {
+            border-radius: 10px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .right-side {
+        .img-class-right{
+        //height: 2rem;
+        height: 55%;
+        width: 100%;
+        //margin-left: 13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 7.5rem;
+        #img-id-right {
+            border-radius: 5px;
+            height: 100%;
+            object-fit: cover;
+        }
+        .h4-text-right {
+            font-size: 60px;
+            font-family: "Times New Roman", Times, serif;
+            
+        }
+        }
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        input {
+            display: block;
+            border: none;
+            height: 2rem;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 1.5rem;
+            padding: 0.2rem 1rem;
+            color: gray;
+            transition: all 0.1s ease-in-out;
+            &:focus {
+                outline: none;
+                border: none;
+            }
+            &:hover{
+                outline: 0.5px solid red;
+                box-shadow: 0.5px 0.5px 15px -1px red;
+            }
+        }
+        label {
+            display: block;
+            text-align: left;
+            width:70%;    
+            margin: auto;
+            float: left;
+            font-size: small;
+            color:gray;
+            margin-bottom: 0.5rem;
+        }
+        #sub_butt{
+            width: 100%;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            transition: all 0.3 ease;
+            &:hover {
+                box-shadow: 0.5px 0.5px 15px -1px black;
+                transform: translateY(-1px);
+            }
+        }
+    }
+
+
+}
+
+.h3--textLogin {
+    color: white;
+}
